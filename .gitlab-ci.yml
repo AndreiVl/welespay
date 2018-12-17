@@ -1,0 +1,28 @@
+image: docker:stable
+
+variables:
+  DOCKER_REG: "docker.welespay.ru"
+  GIT_SSL_NO_VERIFY: "1"
+  DOCKER_PWD: "$DOCKER_PWD"
+  DOCKER_ENV_CI_PROJECT_DIR: $CI_PROJECT_DIR
+
+services:
+  - docker:dind
+
+before_script:
+  - docker login -u writer -p $DOCKER_PWD docker.welespay.ru
+  
+stages:
+  - build
+  - tests
+  - push
+  - deploy
+  
+compile:
+  stage: build
+  script: 
+    - "docker run -t -v $DOCKER_ENV_CI_PROJECT_DIR/:/home/node/app \
+            -w /home/node/app \
+            node:8-alpine /bin/sh -c \"npm install; npm install -g gulp; gulp build\""
+    - "docker build . -t docker.welespay.ru/frontend:$CI_COMMIT_REF_NAME"
+    - "docker push docker.welespay.ru/frontend:$CI_COMMIT_REF_NAME"

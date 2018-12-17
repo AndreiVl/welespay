@@ -1,0 +1,146 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head()
+
+	body
+		div.container
+			h1 .btn
+
+			div.container-sg
+				include ../blocks/btn/btn.pug
+				+btn({text: 'Buy'})
+
+			h1 .btn--secondary
+
+			div.container-sg
+				include ../blocks/btn/btn.pug
+				+btn({text: 'Sell'})(class="btn--secondary")
+
+			h1 .btn--block
+
+			div.container-sg
+				include ../blocks/btn/btn.pug
+				+btn({text: 'Enter'})(class="btn--block")
+
+			h1 .btn--icon
+
+			div.container-sg
+				include ../blocks/btn/btn.pug
+				+btn({icon_l: 'icon--balloon'})(class="btn--icon")
+
+			h1 .info-block
+
+			div.container-sg(style="max-width: 405px;")
+				include ../blocks/info-block/info-block.pug
+
+			div.container-sg
+				include ../blocks/info-block/info-block.pug
+
+			h1 .info-block
+
+			div.container-sg(style="max-width: 575px;")
+				div.info-block
+					div.info-block__header
+						h2.info-block__title Last transactions
+
+					div.info-block__body
+						include ../blocks/list-transaction/list-transaction.pug
+						+list-transaction([
+							{
+								date: '17.10. 2018', 
+								title: 'transfer to crypto (Ethereum)', 
+								balance: '€ 69.00',
+								modifier: 'list-transaction--price-green'
+							},
+							{
+								date: '15.10. 2018', 
+								title: 'transfer to card', 
+								balance: '- $ 9.00',
+								modifier: 'list-transaction--price-pink'
+							},
+							{
+								date: '10.09. 2018', 
+								title: 'transfer to card', 
+								balance: ' $ 20.00',
+								modifier: ''
+							},
+							{
+								date: '07.08. 2018', 
+								title: 'payment', 
+								balance: '- ₽ 370.00',
+								modifier: 'list-transaction--price-pink'
+							},
+							{
+								date: '15.10. 2018', 
+								title: 'denied by the bank', 
+								balance: '- $ 9.00',
+								modifier: 'list-transaction--title-err list-transaction--price-pink'
+							},
+							{
+								date: '10.09. 2018', 
+								title: 'transfer to card', 
+								balance: ' $ 20.00',
+								modifier: ''
+							},
+							{
+								date: '07.09. 2018', 
+								title: 'payment', 
+								balance: '- ₽ 370.00',
+								modifier: 'list-transaction--price-pink'
+							}
+						])
+
+			div.container-sg
+				div.info-block
+					div.info-block__header
+						h2.info-block__title Last transactions
+
+					div.info-block__body
+						+list-transaction([
+							{
+								date: '17.10. 2018', 
+								title: 'transfer to crypto (Ethereum)', 
+								balance: '€ 69.00',
+								modifier: 'list-transaction--price-green'
+							},
+							{
+								date: '15.10. 2018', 
+								title: 'transfer to card', 
+								balance: '- $ 9.00',
+								modifier: 'list-transaction--price-pink'
+							},
+							{
+								date: '10.09. 2018', 
+								title: 'transfer to card', 
+								balance: ' $ 20.00',
+								modifier: ''
+							},
+							{
+								date: '07.08. 2018', 
+								title: 'payment', 
+								balance: '- ₽ 370.00',
+								modifier: 'list-transaction--price-pink'
+							},
+							{
+								date: '15.10. 2018', 
+								title: 'denied by the bank', 
+								balance: '- $ 9.00',
+								modifier: 'list-transaction--title-err list-transaction--price-pink'
+							},
+							{
+								date: '10.09. 2018', 
+								title: 'transfer to card', 
+								balance: ' $ 20.00',
+								modifier: ''
+							},
+							{
+								date: '07.09. 2018', 
+								title: 'payment', 
+								balance: '- ₽ 370.00',
+								modifier: 'list-transaction--price-pink'
+							}
+						])
+
+
+		include include/script.pug

@@ -1,0 +1,10 @@
+mixin item-transaction(data)
+	li.item-transaction(class=data.modifier)
+		div.item-transaction__left
+			span.item-transaction__date!=data.date
+
+		div.item-transaction__divider
+			span.item-transaction__title!=data.title
+
+		div.item-transaction__right
+			span.item-transaction__balance!=data.balance

@@ -1,0 +1,12 @@
+mixin item-balance(data)
+	li.item-balance
+		div.item-balance__left
+			include ../icon/icon.pug
+			+icon(data.icon)
+
+			span.item-balance__currency!=data.currency
+
+		div.item-balance__divider
+
+		div.item-balance__right
+			span.item-balance__balance!=data.balance

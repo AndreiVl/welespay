@@ -1,0 +1,9 @@
+mixin list-balance(data)
+	ul.list-balance
+		include ../item-balance/item-balance.pug
+		- for (var i = 0; i < data.length; i++)
+			+item-balance({
+				icon: data[i].icon, 
+				currency: data[i].currency, 
+				balance: data[i].balance
+			})
