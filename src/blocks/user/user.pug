@@ -1,0 +1,21 @@
+div.user
+	div.user__info
+		div.user__info-top
+			span.user__verified Verified
+
+			div.user__divider
+
+			span.user__name Mr.Gary
+
+		div.user__info-control
+			include ../btn/btn.pug
+			ul.user__list
+				li.user__item
+					+btn({text: 'Log out', icon_r: 'icon--logout', type: 'link'})(class="btn--plain")
+				li.user__item
+					+btn({text: 'Settings', icon_r: 'icon--options', type: 'link'})(class="btn--plain")
+				li.user__item.user__item--active
+					+btn({text: 'Messeges', icon_r: 'icon--mail', type: 'link'})(class="btn--plain")
+
+	div.user__img
+		img(src="images/user-img.jpg" alt="")

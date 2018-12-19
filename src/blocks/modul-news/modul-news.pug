@@ -1,0 +1,15 @@
+section.modul-news
+	div.info-block
+		div.info-block__header
+			h2.info-block__title News
+
+		div.modul-news__body
+			div.modul-news__item
+				include ../news-item/news-item.pug
+				+news-item({datatime: '2018-07-01', time: '01.07.2018', text: '"Walked full length of Boring Co tunnel under LA tonight. Disturbingly long.'})
+
+			div.modul-news__item
+				+news-item({datatime: '2018-05-13', time: '13.05.2018', text: '"Walked full length of Boring Co tunnel under LA tonight. Disturbingly long.'})
+
+			div.modul-news__item
+				+news-item({datatime: '2018-05-05', time: '05.05.2018', text: '"Walked full length of Boring Co tunnel under LA tonight. Disturbingly long.'})

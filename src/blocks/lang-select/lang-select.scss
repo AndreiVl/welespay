@@ -1,0 +1,55 @@
+.lang-select {
+	/* 1 Positioning */
+	position: relative;
+
+}
+.lang-select:before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 50%;
+	left: -2px;
+	content: '';
+	z-index: 1;
+
+	/* 2 Block model */
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	
+	/* 4 Visual */
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgOSA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05IDQuNUwyLjI1IDguMzk3MTFMMi4yNSAwLjYwMjg4NUw5IDQuNVoiIGZpbGw9IiM2NjY2NjYiLz48L3N2Zz4=);
+}
+.lang-select select {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2;
+
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	padding-left: 7px;
+
+	/* 3 Typography */
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #666666;
+
+	/* 4 Visual */
+	border: none;
+	background: none;
+
+	/* 6 Misc */
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.lang-select select:focus {
+	/* 4 Visual */
+	outline: 2px solid #3BD0D6;
+}
+.lang-select select:active {
+	/* 4 Visual */
+	outline: 3px solid #3BD0D6;
+}

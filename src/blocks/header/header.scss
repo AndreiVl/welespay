@@ -1,0 +1,63 @@
+.header {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	height: 204px;
+
+	/* 4 Visual */
+	background-color: #ffffff;
+}
+.header::after {
+	/* 1 Positioning */
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	z-index: 1;
+
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	height: 41px;
+
+	
+	/* 4 Visual */
+	background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(167, 167, 167, 0.15) 100%);
+}
+.header__in {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2;
+
+	/* 2 Block model */
+	display: flex;
+	justify-content: space-between;
+}
+.header__left {
+	/* 2 Block model */
+	padding-top: 28px;
+	flex-grow: 2;
+}
+.header__top {
+	/* 2 Block model */
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+.header__info {
+	/* 2 Block model */
+	display: flex;
+	justify-content: space-between;
+	padding-right: 40px;
+}
+.header__lang-select {
+	/* 2 Block model */
+	width: 70px;
+	margin-right: 115px;
+}
+.header__last-login {
+	/* 2 Block model */
+	padding-top: 2px;
+}

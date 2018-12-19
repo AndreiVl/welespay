@@ -1,0 +1,37 @@
+div.info-block
+	div.info-block__header
+		h2.info-block__title Crypto exchange
+
+	div.info-block__body
+		include ../list-balance/list-balance.pug
+		+list-balance([
+			{
+				icon: 'icon--rub', 
+				currency: 'Ruble', 
+				balance: '250.000.00'
+			},
+			{
+				icon: 'icon--euro', 
+				currency: 'Euro', 
+				balance: '84.00'
+			},
+			{
+				icon: 'icon--dolar', 
+				currency: 'US Dollar', 
+				balance: '53.00'
+			},
+			{
+				icon: 'icon--ethereum', 
+				currency: 'Ethereum', 
+				balance: '5.45'
+			},
+			{
+				icon: 'icon--bitcoin', 
+				currency: 'Bitcoin', 
+				balance: '75.00'
+			}
+		])
+
+	h3.info-block__subtitle Total balance
+
+	div.info-block__total-balance 37 003.50 in USD

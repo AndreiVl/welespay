@@ -1,0 +1,4 @@
+mixin logo(data)
+	div.logo(class!=attributes.class)
+		a(href="/")
+			img(src="images/"+data.img, alt=data.title)

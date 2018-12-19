@@ -1,0 +1,35 @@
+header.header
+	div.container
+		div.header__in
+			div.header__left
+				div.header__top
+					div.header__logo
+						include ../logo/logo.pug
+						+logo({img: 'logo--in.svg', title: 'WelesPay'})(class="logo--in")
+
+					div.header__info
+						div.header__lang-select
+							include ../lang-select/lang-select.pug
+							+lang-select({
+								name: 'langs',
+								value: [
+									'En',
+									'Du',
+									'Fr'
+								],
+								items: [
+									'En',
+									'Du',
+									'Fr'
+								]
+							})
+
+						div.header__last-login
+							include ../last-login/last-login.pug
+
+				div.header__menu
+					include ../menu/menu.pug
+
+			div.header__right
+				div.header__user
+					include ../user/user.pug

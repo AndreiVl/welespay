@@ -1,0 +1,7 @@
+mixin news-item(data)
+	div.news-item
+		time.news-item__time(datatime=data.datatime)!=data.time
+
+		p.news-item__text!=data.text
+
+		a.news-item__link(href="#") Learn more

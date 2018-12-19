@@ -1,0 +1,91 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head()
+
+	body
+		include ../blocks/header/header.pug
+
+		div.container
+			div.row
+				div.col-5
+					include ../blocks/info-block/info-block.pug
+
+				div.col-7
+					div.info-block
+						div.info-block__header
+							h2.info-block__title Last transactions
+
+						div.info-block__body
+							include ../blocks/list-transaction/list-transaction.pug
+							+list-transaction([
+								{
+									date: '17.10. 2018', 
+									title: 'transfer to crypto (Ethereum)', 
+									balance: '€ 69.00',
+									modifier: 'list-transaction--price-green'
+								},
+								{
+									date: '15.10. 2018', 
+									title: 'transfer to card', 
+									balance: '- $ 9.00',
+									modifier: 'list-transaction--price-pink'
+								},
+								{
+									date: '10.09. 2018', 
+									title: 'transfer to card', 
+									balance: ' $ 20.00',
+									modifier: ''
+								},
+								{
+									date: '07.08. 2018', 
+									title: 'payment', 
+									balance: '- ₽ 370.00',
+									modifier: 'list-transaction--price-pink'
+								},
+								{
+									date: '15.10. 2018', 
+									title: 'denied by the bank', 
+									balance: '- $ 9.00',
+									modifier: 'list-transaction--title-err list-transaction--price-pink'
+								},
+								{
+									date: '10.09. 2018', 
+									title: 'transfer to card', 
+									balance: ' $ 20.00',
+									modifier: ''
+								},
+								{
+									date: '07.09. 2018', 
+									title: 'payment', 
+									balance: '- ₽ 370.00',
+									modifier: 'list-transaction--price-pink'
+								}
+							])
+
+			div.row
+				div.col-7
+					div.info-block
+						div.info-block__header
+							h2.info-block__title Currency pairs
+
+						div.info-block__body
+							p some text
+
+				div.col-5
+					div.info-block
+						div.info-block__header
+							h2.info-block__title Crypto exchange
+
+						div.info-block__body
+							p some text
+
+			div.row
+				div.col
+					include ../blocks/modul-news/modul-news.pug
+
+			div.row
+				div.col
+					include ../blocks/footer/footer.pug
+
+		include include/script.pug
