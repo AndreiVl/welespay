@@ -3,4 +3,5 @@ div.follow-us
 		label(for="email") Follow us
 
 		div.form-control
-			input.follow-us__input(type="email", name="email", placeholder="e-mail")
+			include ../input/input.pug
+			+input({type: 'email', name: 'email', placeholder: 'e-mail'})

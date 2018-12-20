@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Mail</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <div class="page-authorization">
+      <div class="page-authorization__login">
+        <div class="page-authorization__header">
+          <div class="page-authorization__header-top">
+                        <div class="logo"><a href="/"><img src="images/logo.svg" alt="WelesPay"></a></div>
+                        <div class="lang-select">
+                          <select name="langs">
+                            <option selected value="En">En</option>
+                            <option value="Du">Du</option>
+                            <option value="Fr">Fr</option>
+                          </select>
+                        </div>
+          </div>
+          <h1 class="page-authorization__title">One place for your digital money</h1>
+        </div>
+        <div class="page-authorization__body">
+          <div class="form-authorization">
+            <form class="form-authorization__forma" metod="post">
+              <div class="form-control">
+                <label class="visually-hidden" for="login">Login</label>
+                                <div class="input">
+                                  <input type="text" name="login" id="login" placeholder="Login">
+                                </div>
+              </div>
+              <div class="form-control">
+                <label class="visually-hidden" for="password">Password</label>
+                                <div class="input input--password">
+                                  <input type="password" name="password&quot;" id="password"" placeholder="Password">
+                                </div>
+              </div>
+              <div class="form-authorization__btn">
+                                <button class="btn btn--block" type="submit"><span class="btn__text">Enter</span>
+                                </button>
+              </div>
+            </form>
+            <div class="form-authorization__links">
+              <p>or <a class="form-authorization__link" href="#">sign up </a>fo free</p>
+              <p><a class="form-authorization__link" href="#">Forgot your password?</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="page-authorization__footer">
+          <div class="follow-us">
+            <form class="follow-us__form" metod="post">
+              <label for="email">Follow us</label>
+              <div class="form-control">
+                                <div class="input">
+                                  <input type="email" name="email" id="email" placeholder="e-mail">
+                                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="page-authorization__slider">
+        <div class="slider-authorization"></div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
