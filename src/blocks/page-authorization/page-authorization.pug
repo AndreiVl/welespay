@@ -1,0 +1,33 @@
+div.page-authorization
+	div.page-authorization__login
+		div.page-authorization__header
+			div.page-authorization__header-top
+				include ../logo/logo.pug
+				+logo({img: 'logo.svg', title: 'WelesPay'})
+
+				include ../lang-select/lang-select.pug
+				+lang-select({
+					name: 'langs',
+					value: [
+						'En',
+						'Du',
+						'Fr'
+					],
+					items: [
+						'En',
+						'Du',
+						'Fr'
+					]
+				})
+
+			h1.page-authorization__title One place for your digital money
+
+		div.page-authorization__body
+			include ../form-authorization/form-authorization.pug
+
+		div.page-authorization__footer
+			include ../follow-us/follow-us.pug
+
+
+	div.page-authorization__slider
+		div.slider-authorization
