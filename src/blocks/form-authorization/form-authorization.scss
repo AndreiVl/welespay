@@ -1,10 +1,27 @@
 .form-authorization__forma {
 	/* 2 Block model */
-	margin-bottom: 30px;
+	margin-bottom: 36px;
+}
+.form-control__error {
+	/* 1 Positioning */
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+
+	/* 3 Typography */
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #FC63A3;
 }
 .form-authorization__forma .form-control {
 	/* 2 Block model */
 	margin-bottom: 30px;
+}
+.form-authorization__btn {
+	/* 2 Block model */
+	padding-top: 5px;
+
 }
 .form-authorization__links {
 	/* 3 Typography */
@@ -12,6 +29,11 @@
 	line-height: 22px;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.6);
+}
+.form-authorization__links p {
+	/* 2 Block model */
+	margin: 22px 0;
+
 }
 .form-authorization__link {
 	/* 3 Typography */
@@ -28,14 +50,3 @@
 	/* 4 Visual */
 	opacity: 0.7;
 }
-/* 1 Positioning */
-
-/* 2 Block model */
-
-/* 3 Typography */
-
-/* 4 Visual */
-
-/* 5 Animation*/
-
-/* 6 Misc */

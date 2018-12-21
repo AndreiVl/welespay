@@ -5,12 +5,20 @@
 }
 .follow-us__form label {
 	/* 2 Block model */
-	margin-right: 22px;
-	min-width: 105px;
+	width: 114px;
+	flex: 0 0 114px;
 
 	/* 3 Typography */
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 300;
 	color: #C3C3C3;
+}
+.follow-us__form-btn {
+	/* 2 Block model */
+	width: 82px;
+	flex: 0 0 82px;
+
+	/* 3 Typography */
+	text-align: right;
 }

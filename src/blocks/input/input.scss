@@ -15,6 +15,11 @@
 	color: #C3C3C3;
 }
 .input input {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+
 	/* 3 Typography */
 	font-size: 24px;
 	line-height: 28px;
@@ -27,7 +32,7 @@
 }
 .input input[placeholder] {
 	/* 3 Typography */
-	text-overflow:ellipsis;
+	text-overflow: ellipsis;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 300;

@@ -1,18 +1,16 @@
 .btn {
 	/* 2 Block model */
 	width: 192px;
-	height: 58px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px 0 8px 0;
-	box-sizing: border-box;
+	height: 54px;
+	display: inline-block;
+	padding: 8px  0;
 
 	/* 3 Typography */
 	font-family: $font-main;
 	color: #ffffff;
 	text-decoration: none;
 	white-space: nowrap;
+	text-align: center;
 
 	/* 4 Visual */
 	border: 3px solid #37d5dc;
@@ -62,7 +60,7 @@
 }
 .btn .icon:only-of-type {
 	/* 2 Block model */
-	margin: 0;
+	margin: 0 auto;
 }
 
 .btn--secondary {
