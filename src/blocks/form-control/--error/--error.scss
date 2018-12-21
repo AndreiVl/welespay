@@ -1,0 +1,12 @@
+.form-control--error {
+	/* 4 Visual */
+	border-bottom: solid #FC63A3;
+}
+.form-control--error::before {
+	/* 4 Visual */
+	background-color: #FC63A3;
+}
+.form-control--error::after {
+	/* 4 Visual */
+	background-color: #FC63A3;
+}

@@ -2,6 +2,11 @@ div.follow-us
 	form.follow-us__form(metod="post")
 		label(for="email") Follow us
 
-		div.form-control
-			include ../input/input.pug
-			+input({type: 'email', name: 'email', placeholder: 'e-mail'})
+		div
+			div.form-control
+				include ../input/input.pug
+				+input({type: 'email', name: 'email', placeholder: 'E-mail'})
+
+		div.follow-us__form-btn
+			include ../btn/btn.pug
+			+btn({icon_l: 'icon--arrow-right', type: 'submit'})(class="btn--icon btn--gray")
