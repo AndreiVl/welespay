@@ -1,9 +1,14 @@
 .btn--icon {
 	/* 2 Block model */
-	padding: 24px 20px 18px 20px;
+	width: 58px;
+	height: 58px;
+	box-sizing: border-box;
 }
 .btn--icon .icon {
+	/* 2 Block model */
+	width: 26px;
+	height: 24px;
+
+	/* 4 Visual */
 	fill: #ffffff;
-	width: 34px;
-	height: 32px;
 }

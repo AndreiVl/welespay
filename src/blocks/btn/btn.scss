@@ -1,9 +1,11 @@
 .btn {
 	/* 2 Block model */
+	width: 192px;
+	height: 58px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 73px 8px 73px;
+	padding: 10px 0 8px 0;
 	box-sizing: border-box;
 
 	/* 3 Typography */
@@ -31,12 +33,13 @@
 }
 .btn:focus {
 	/* 6 Sundry */
-	outline: 4px solid gray;
+	box-shadow: 0 8px 16px 0 rgba(66, 170, 170, 0.3), 0 6px 20px 0 rgba(66, 170, 170, 0.25);
+	outline: none;
 }
 .btn:active {
 	/* 6 Sundry */
-	border-radius: 2px;
-	outline: 4px solid #000000;
+	box-shadow: 0 8px 16px 0 rgba(66, 170, 170, 0.3), 0 6px 20px 0 rgba(66, 170, 170, 0.25);
+	outline: none;
 }
 .btn__text {
 	/* 3 Typography */
@@ -66,6 +69,11 @@
 	/* 4 Visual */
 	border: 3px solid #fd89b9;
 	background-color: $color-secondary;
+}
+.btn--gray {
+	/* 4 Visual */
+	border: 3px solid #bfbfbf;
+	background-color: #c4c4c4;
 }
 
 @import '--block/--block';
