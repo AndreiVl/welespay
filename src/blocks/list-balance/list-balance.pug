@@ -3,7 +3,7 @@ mixin list-balance(data)
 		include ../item-balance/item-balance.pug
 		- for (var i = 0; i < data.length; i++)
 			+item-balance({
-				icon: data[i].icon, 
+				icon: data[i].icon,
 				currency: data[i].currency, 
 				balance: data[i].balance
 			})

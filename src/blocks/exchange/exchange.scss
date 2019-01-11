@@ -1,0 +1,50 @@
+.exchange__list {
+	/* 2 Block model */
+	margin: 0;
+	padding: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.exchange__item {
+	/* 2 Block model */
+	display: flex;
+	margin-bottom: 65px;
+}
+.exchange__item-right {
+	/* 2 Block model */
+	flex-grow: 2;
+	margin-right: 30px;
+}
+.exchange__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 30px;
+}
+.exchange__total {
+	/* 2 Block model */
+	margin-bottom: 38px;
+}
+.exchange__text {
+	/* 3 Typography */
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 300;  
+	color: #000000;
+}
+.exchange__action {
+	/* 2 Block model */
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

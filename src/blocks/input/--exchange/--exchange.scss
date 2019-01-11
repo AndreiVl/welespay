@@ -1,0 +1,23 @@
+.input--exchange input {
+	/* 3 Typography */
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 300;
+	color: #000000;
+}
+.input input::-webkit-input-placeholder {
+	/* 3 Typography */
+  color: #9A9A9A;
+}
+.input input:-moz-placeholder {
+	/* 3 Typography */
+  color: #9A9A9A;
+}
+.input input::-moz-placeholder {
+	/* 3 Typography */
+  color: #9A9A9A;
+}
+.input input:-ms-input-placeholder {
+	/* 3 Typography */
+  color: #9A9A9A;
+}

@@ -40,6 +40,10 @@
 	outline: none;
 }
 .btn__text {
+	/* 2 Block model */
+	display: inline-block;
+	vertical-align: middle;
+
 	/* 3 Typography */
 	font-family: $font-main;
 	font-size: 24px;
@@ -56,6 +60,8 @@
 }
 .btn .icon {
 	/* 2 Block model */
+	display: inline-block;
+	vertical-align: middle;
 	margin: 0 16px;
 }
 .btn .icon:only-of-type {
@@ -77,3 +83,4 @@
 @import '--block/--block';
 @import '--icon/--icon';
 @import '--plain/--plain';
+@import '--sell/--sell';

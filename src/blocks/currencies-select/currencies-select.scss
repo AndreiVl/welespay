@@ -1,13 +1,13 @@
-.lang-select {
+.currencies-select {
 	/* 1 Positioning */
 	position: relative;
 
 }
-.lang-select:before {
+.currencies-select:before {
 	/* 1 Positioning */
 	position: absolute;
 	top: 50%;
-	left: -2px;
+	right: 0;
 	content: '';
 	z-index: 1;
 
@@ -19,8 +19,9 @@
 	
 	/* 4 Visual */
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgOSA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05IDQuNUwyLjI1IDguMzk3MTFMMi4yNSAwLjYwMjg4NUw5IDQuNVoiIGZpbGw9IiM2NjY2NjYiLz48L3N2Zz4=);
+	transform: rotate(180deg);
 }
-.lang-select select {
+.currencies-select select {
 	/* 1 Positioning */
 	position: relative;
 	z-index: 2;
@@ -32,9 +33,9 @@
 
 	/* 3 Typography */
 	font-size: 20px;
-	font-weight: 400;
-	line-height: 26px;
-	color: #666666;
+	font-weight: 300;
+	line-height: 28px;
+	color: #202020;
 
 	/* 4 Visual */
 	border: none;
@@ -45,11 +46,11 @@
   -moz-appearance: none;
   appearance: none;
 }
-.lang-select select:focus {
+.currencies-select select:focus {
 	/* 4 Visual */
 	outline: 2px solid #3BD0D6;
 }
-.lang-select select:active {
+.currencies-select select:active {
 	/* 4 Visual */
 	outline: 3px solid #3BD0D6;
 }

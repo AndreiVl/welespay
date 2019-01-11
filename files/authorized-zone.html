@@ -55,17 +55,17 @@
                   <div class="user__info-control">
                     <ul class="user__list">
                       <li class="user__item"><a class="btn btn--plain" href="#" role="button"><span class="btn__text">Log out</span>
-                                                                  <svg class="icon icon--logout ">
+                                                                  <svg class="icon icon--logout icon--lg">
                                                                     <use xlink:href="images/icons.svg#icon--logout"></use>
                                                                   </svg></a>
                       </li>
                       <li class="user__item"><a class="btn btn--plain" href="#" role="button"><span class="btn__text">Settings</span>
-                                                                  <svg class="icon icon--options ">
+                                                                  <svg class="icon icon--options icon--lg">
                                                                     <use xlink:href="images/icons.svg#icon--options"></use>
                                                                   </svg></a>
                       </li>
                       <li class="user__item user__item--active"><a class="btn btn--plain" href="#" role="button"><span class="btn__text">Messeges</span>
-                                                                  <svg class="icon icon--mail ">
+                                                                  <svg class="icon icon--mail icon--lg">
                                                                     <use xlink:href="images/icons.svg#icon--mail"></use>
                                                                   </svg></a>
                       </li>
@@ -149,41 +149,55 @@
             </div>
             <div class="info-block__body">
                             <ul class="list-transaction">
-                                              <li class="item-transaction list-transaction--price-green">
-                                                <div class="item-transaction__left"><span class="item-transaction__date">17.10. 2018</span></div>
-                                                <div class="item-transaction__divider"><span class="item-transaction__title">transfer to crypto (Ethereum)</span></div>
-                                                <div class="item-transaction__right"><span class="item-transaction__balance">€ 69.00</span></div>
-                                              </li>
-                                              <li class="item-transaction list-transaction--price-pink">
-                                                <div class="item-transaction__left"><span class="item-transaction__date">15.10. 2018</span></div>
-                                                <div class="item-transaction__divider"><span class="item-transaction__title">transfer to card</span></div>
-                                                <div class="item-transaction__right"><span class="item-transaction__balance">- $ 9.00</span></div>
-                                              </li>
-                                              <li class="item-transaction">
-                                                <div class="item-transaction__left"><span class="item-transaction__date">10.09. 2018</span></div>
-                                                <div class="item-transaction__divider"><span class="item-transaction__title">transfer to card</span></div>
-                                                <div class="item-transaction__right"><span class="item-transaction__balance"> $ 20.00</span></div>
-                                              </li>
-                                              <li class="item-transaction list-transaction--price-pink">
-                                                <div class="item-transaction__left"><span class="item-transaction__date">07.08. 2018</span></div>
-                                                <div class="item-transaction__divider"><span class="item-transaction__title">payment</span></div>
-                                                <div class="item-transaction__right"><span class="item-transaction__balance">- ₽ 370.00</span></div>
-                                              </li>
-                                              <li class="item-transaction list-transaction--title-err list-transaction--price-pink">
-                                                <div class="item-transaction__left"><span class="item-transaction__date">15.10. 2018</span></div>
-                                                <div class="item-transaction__divider"><span class="item-transaction__title">denied by the bank</span></div>
-                                                <div class="item-transaction__right"><span class="item-transaction__balance">- $ 9.00</span></div>
-                                              </li>
-                                              <li class="item-transaction">
-                                                <div class="item-transaction__left"><span class="item-transaction__date">10.09. 2018</span></div>
-                                                <div class="item-transaction__divider"><span class="item-transaction__title">transfer to card</span></div>
-                                                <div class="item-transaction__right"><span class="item-transaction__balance"> $ 20.00</span></div>
-                                              </li>
-                                              <li class="item-transaction list-transaction--price-pink">
-                                                <div class="item-transaction__left"><span class="item-transaction__date">07.09. 2018</span></div>
-                                                <div class="item-transaction__divider"><span class="item-transaction__title">payment</span></div>
-                                                <div class="item-transaction__right"><span class="item-transaction__balance">- ₽ 370.00</span></div>
-                                              </li>
+                              <li class="list-transaction__item">
+                                                <div class="item-transaction item-transaction--price-green">
+                                                  <div class="item-transaction__left"><span class="item-transaction__date">17.10. 2018</span></div>
+                                                  <div class="item-transaction__divider"><span class="item-transaction__title">transfer to crypto (Ethereum)</span></div>
+                                                  <div class="item-transaction__right"><span class="item-transaction__balance">€&nbsp;69.00</span></div>
+                                                </div>
+                              </li>
+                              <li class="list-transaction__item">
+                                                <div class="item-transaction item-transaction--price-pink">
+                                                  <div class="item-transaction__left"><span class="item-transaction__date">15.10. 2018</span></div>
+                                                  <div class="item-transaction__divider"><span class="item-transaction__title">transfer to card</span></div>
+                                                  <div class="item-transaction__right"><span class="item-transaction__balance">- $&nbsp;9.00</span></div>
+                                                </div>
+                              </li>
+                              <li class="list-transaction__item">
+                                                <div class="item-transaction">
+                                                  <div class="item-transaction__left"><span class="item-transaction__date">10.09. 2018</span></div>
+                                                  <div class="item-transaction__divider"><span class="item-transaction__title">transfer to card</span></div>
+                                                  <div class="item-transaction__right"><span class="item-transaction__balance"> $&nbsp;20.00</span></div>
+                                                </div>
+                              </li>
+                              <li class="list-transaction__item">
+                                                <div class="item-transaction item-transaction--price-pink">
+                                                  <div class="item-transaction__left"><span class="item-transaction__date">07.08. 2018</span></div>
+                                                  <div class="item-transaction__divider"><span class="item-transaction__title">payment</span></div>
+                                                  <div class="item-transaction__right"><span class="item-transaction__balance">- ₽&nbsp;370.00</span></div>
+                                                </div>
+                              </li>
+                              <li class="list-transaction__item">
+                                                <div class="item-transaction item-transaction--title-err item-transaction--price-pink">
+                                                  <div class="item-transaction__left"><span class="item-transaction__date">15.10. 2018</span></div>
+                                                  <div class="item-transaction__divider"><span class="item-transaction__title">denied by the bank</span></div>
+                                                  <div class="item-transaction__right"><span class="item-transaction__balance">- $&nbsp;9.00</span></div>
+                                                </div>
+                              </li>
+                              <li class="list-transaction__item">
+                                                <div class="item-transaction">
+                                                  <div class="item-transaction__left"><span class="item-transaction__date">10.09. 2018</span></div>
+                                                  <div class="item-transaction__divider"><span class="item-transaction__title">transfer to card</span></div>
+                                                  <div class="item-transaction__right"><span class="item-transaction__balance"> $&nbsp;20.00</span></div>
+                                                </div>
+                              </li>
+                              <li class="list-transaction__item">
+                                                <div class="item-transaction item-transaction--price-pink">
+                                                  <div class="item-transaction__left"><span class="item-transaction__date">07.09. 2018</span></div>
+                                                  <div class="item-transaction__divider"><span class="item-transaction__title">payment</span></div>
+                                                  <div class="item-transaction__right"><span class="item-transaction__balance">- ₽&nbsp;370.00</span></div>
+                                                </div>
+                              </li>
                             </ul>
             </div>
           </div>
@@ -204,7 +218,57 @@
               <h2 class="info-block__title">Crypto exchange</h2>
             </div>
             <div class="info-block__body">
-              <p>some text</p>
+              <form class="exchange" metod="post">
+                <ul class="exchange__list">
+                  <li class="exchange__item">
+                    <div class="exchange__item-right">
+                      <div class="form-control">
+                                              <div class="input input--exchange">
+                                                <input type="text" name="sell-buy" id="sell-buy" placeholder="Amount to sell / buy">
+                                              </div>
+                      </div>
+                    </div>
+                    <div class="exchange__item-left">
+                      <div class="form-control form-control--select">
+                                                <div class="currencies-select">
+                                                  <select name="currencies">
+                                                    <option selected value="USD">USD</option>
+                                                    <option value="EURO">EURO</option>
+                                                    <option value="BTC">BTC</option>
+                                                  </select>
+                                                </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="exchange__item">
+                    <div class="exchange__item-right">
+                      <div class="form-control">
+                                              <div class="input input--exchange">
+                                                <input type="text" name="cost" id="cost" placeholder="3 800">
+                                              </div>
+                      </div>
+                    </div>
+                    <div class="exchange__item-left">
+                      <div class="form-control form-control--select">
+                                                <div class="currencies-select">
+                                                  <select name="currencies">
+                                                    <option selected value="USD">USD</option>
+                                                    <option value="EURO">EURO</option>
+                                                    <option value="BTC">BTC</option>
+                                                  </select>
+                                                </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="exchange__total"><span class="exchange__text">Fees:<span> 10 USD</span></span></div>
+                <div class="exchange__action">
+                                    <button class="btn" type="button"><span class="btn__text">Buy</span>
+                                    </button>
+                                    <button class="btn btn--sell" type="button"><span class="btn__text">Sell</span>
+                                    </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

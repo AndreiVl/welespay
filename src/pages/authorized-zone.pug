@@ -22,44 +22,44 @@ html(lang="ru")
 								{
 									date: '17.10. 2018', 
 									title: 'transfer to crypto (Ethereum)', 
-									balance: '€ 69.00',
-									modifier: 'list-transaction--price-green'
+									balance: '€&nbsp;69.00',
+									modifier: 'item-transaction--price-green'
 								},
 								{
 									date: '15.10. 2018', 
 									title: 'transfer to card', 
-									balance: '- $ 9.00',
-									modifier: 'list-transaction--price-pink'
+									balance: '- $&nbsp;9.00',
+									modifier: 'item-transaction--price-pink'
 								},
 								{
 									date: '10.09. 2018', 
 									title: 'transfer to card', 
-									balance: ' $ 20.00',
+									balance: ' $&nbsp;20.00',
 									modifier: ''
 								},
 								{
 									date: '07.08. 2018', 
 									title: 'payment', 
-									balance: '- ₽ 370.00',
-									modifier: 'list-transaction--price-pink'
+									balance: '- ₽&nbsp;370.00',
+									modifier: 'item-transaction--price-pink'
 								},
 								{
 									date: '15.10. 2018', 
 									title: 'denied by the bank', 
-									balance: '- $ 9.00',
-									modifier: 'list-transaction--title-err list-transaction--price-pink'
+									balance: '- $&nbsp;9.00',
+									modifier: 'item-transaction--title-err item-transaction--price-pink'
 								},
 								{
 									date: '10.09. 2018', 
 									title: 'transfer to card', 
-									balance: ' $ 20.00',
+									balance: ' $&nbsp;20.00',
 									modifier: ''
 								},
 								{
 									date: '07.09. 2018', 
 									title: 'payment', 
-									balance: '- ₽ 370.00',
-									modifier: 'list-transaction--price-pink'
+									balance: '- ₽&nbsp;370.00',
+									modifier: 'item-transaction--price-pink'
 								}
 							])
 
@@ -75,9 +75,9 @@ html(lang="ru")
 					div.info-block
 						div.info-block__header
 							h2.info-block__title Crypto exchange
-
+							
 						div.info-block__body
-							p some text
+							include ../blocks/exchange/exchange.pug
 
 				div.container__col.container__col--fluid
 					include ../blocks/modul-news/modul-news.pug

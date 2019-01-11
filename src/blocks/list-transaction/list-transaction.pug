@@ -2,9 +2,10 @@ mixin list-transaction(data)
 	ul.list-transaction
 		include ../item-transaction/item-transaction.pug
 		- for (var i = 0; i < data.length; i++)
-			+item-transaction({
-				date: data[i].date, 
-				title: data[i].title, 
-				balance: data[i].balance,
-				modifier: data[i].modifier
-			})
+			li.list-transaction__item
+				+item-transaction({
+					date: data[i].date, 
+					title: data[i].title, 
+					balance: data[i].balance,
+					modifier: data[i].modifier
+				})

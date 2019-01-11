@@ -1,0 +1,54 @@
+form.exchange(metod="post")
+	ul.exchange__list
+		li.exchange__item
+			div.exchange__item-right
+				include ../input/input.pug
+				div.form-control
+					+input({type: 'text', name: 'sell-buy', placeholder: 'Amount to sell / buy'})(class="input--exchange")
+			
+			div.exchange__item-left
+				div.form-control.form-control--select
+					include ../currencies-select/currencies-select.pug
+					+currencies-select({
+									name: 'currencies',
+									value: [
+										'USD',
+										'EURO',
+										'BTC'
+									],
+									items: [
+										'USD',
+										'EURO',
+										'BTC'
+									]
+								})
+	
+		li.exchange__item
+			div.exchange__item-right
+				div.form-control
+					+input({type: 'text', name: 'cost', placeholder: '3 800'})(class="input--exchange")
+			
+			div.exchange__item-left
+				div.form-control.form-control--select
+					+currencies-select({
+									name: 'currencies',
+									value: [
+										'USD',
+										'EURO',
+										'BTC'
+									],
+									items: [
+										'USD',
+										'EURO',
+										'BTC'
+									]
+								})
+
+	div.exchange__total
+			span.exchange__text Fees:
+				span  10 USD
+
+	div.exchange__action
+		include ../btn/btn.pug
+		+btn({text: 'Buy'})
+		+btn({text: 'Sell'})(class="btn--sell")

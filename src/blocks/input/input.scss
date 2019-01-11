@@ -30,14 +30,6 @@
 	border: none;
 	background: none;
 }
-.input input[placeholder] {
-	/* 3 Typography */
-	text-overflow: ellipsis;
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 300;
-	color: #D9D9D9;
-}
 .input input::-webkit-input-placeholder {
 	/* 3 Typography */
   color: #D9D9D9;
@@ -58,3 +50,4 @@
   text-overflow:ellipsis;
 }
 @import '--password/--password';
+@import '--exchange/--exchange';

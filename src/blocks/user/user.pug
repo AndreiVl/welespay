@@ -11,11 +11,11 @@ div.user
 			include ../btn/btn.pug
 			ul.user__list
 				li.user__item
-					+btn({text: 'Log out', icon_r: 'icon--logout', type: 'link'})(class="btn--plain")
+					+btn({text: 'Log out', icon_r: 'icon--logout', icon_mod: 'icon--lg', type: 'link'})(class="btn--plain")
 				li.user__item
-					+btn({text: 'Settings', icon_r: 'icon--options', type: 'link'})(class="btn--plain")
+					+btn({text: 'Settings', icon_r: 'icon--options', icon_mod: 'icon--lg', type: 'link'})(class="btn--plain")
 				li.user__item.user__item--active
-					+btn({text: 'Messeges', icon_r: 'icon--mail', type: 'link'})(class="btn--plain")
+					+btn({text: 'Messeges', icon_r: 'icon--mail', icon_mod: 'icon--lg', type: 'link'})(class="btn--plain")
 
 	div.user__img
 		img(src="images/user-img.jpg" alt="")

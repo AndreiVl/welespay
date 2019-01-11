@@ -8,13 +8,13 @@ mixin btn(data)
 
 		a.btn(href=link, class!=attributes.class, id!=attributes.id, role="button")
 			if data.icon_l
-				+icon(data.icon_l)
+				+icon(data.icon_l, data.icon_mod)
 
 			if data.text
 				span.btn__text!=data.text
 
 			if data.icon_r
-				+icon(data.icon_r)
+				+icon(data.icon_r, data.icon_mod)
 	else
 		- var type = 'button'
 		if data.type && data.type === 'submit'
@@ -22,10 +22,10 @@ mixin btn(data)
 
 		button.btn(class!=attributes.class, id!=attributes.id, type=type, name=data.name)
 			if data.icon_l
-				+icon(data.icon_l)
+				+icon(data.icon_l, data.icon_mod)
 
 			if data.text
 				span.btn__text!=data.text
 
 			if data.icon_r
-				+icon(data.icon_r)
+				+icon(data.icon_r, data.icon_mod)
