@@ -1,0 +1,45 @@
+.container {
+	/* 2 Block model */
+	width: 100%;
+	max-width: 1040px;	
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+
+	@media(min-width: 1600px) {
+		max-width: 1600px;
+	}
+}
+.container__row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+	box-sizing: border-box;
+}
+.container__col {
+	display: flex;
+	width: 58.333333%;
+	padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+
+  @media(min-width: 1600px) {
+		width: 33.33333%;
+  }
+}
+.container__col:nth-child(1),
+.container__col:nth-child(4n),
+.container__col:nth-child(4n + 1) {
+	width: 41.666667%;
+
+	@media(min-width: 1600px) {
+		width: 33.33333%;
+  }
+}
+.container__col--fluid {
+	flex-grow: 2;
+}

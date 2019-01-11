@@ -7,11 +7,11 @@ html(lang="ru")
 		include ../blocks/header/header.pug
 
 		div.container
-			div.row
-				div.col-5
+			div.container__row
+				div.container__col
 					include ../blocks/info-block/info-block.pug
 
-				div.col-7
+				div.container__col
 					div.info-block
 						div.info-block__header
 							h2.info-block__title Last transactions
@@ -63,8 +63,7 @@ html(lang="ru")
 								}
 							])
 
-			div.row
-				div.col-7
+				div.container__col
 					div.info-block
 						div.info-block__header
 							h2.info-block__title Currency pairs
@@ -72,7 +71,7 @@ html(lang="ru")
 						div.info-block__body
 							p some text
 
-				div.col-5
+				div.container__col
 					div.info-block
 						div.info-block__header
 							h2.info-block__title Crypto exchange
@@ -80,12 +79,11 @@ html(lang="ru")
 						div.info-block__body
 							p some text
 
-			div.row
-				div.col
+				div.container__col.container__col--fluid
 					include ../blocks/modul-news/modul-news.pug
 
-			div.row
-				div.col
+			div.container__row
+				div.container__col.container__col--fluid
 					include ../blocks/footer/footer.pug
 
 		include include/script.pug

@@ -5,5 +5,7 @@ html(lang="ru")
 
 	body
 		div.container
+			form(action="http://192.168.99.100:8080/oauth/token" method="post" id="test-form")
+				input(type="submit" value="Send")
 
 		include include/script.pug

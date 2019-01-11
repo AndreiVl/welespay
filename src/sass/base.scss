@@ -33,46 +33,10 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container {
-	/* 2 Block model */
-	width: 100%;
-	max-width: 1040px;	
-	margin: 0 auto;
-	padding: 0 20px;
-	box-sizing: border-box;
-}
 .container-sg {
 	/* 2 Block model */
 	width: 100%;
 	max-width: 960px;
 	padding-top: 20px;
 	margin-bottom: 40px;
-}
-.row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-top: 28px;
-	margin-left: -10px;
-	margin-right: -10px;
-	box-sizing: border-box;
-}
-.col {
-	width: 100%;
-	padding-right: 10px;
-  padding-left: 10px;
-}
-.col-5 {
-	flex: 0 0 41.666667%;
-  max-width: 41.666667%;
-  padding-right: 10px;
-  padding-left: 10px;
-  box-sizing: border-box;
-}
-.col-7 {
-	flex: 0 0 58.333333%;
-  max-width: 58.333333%;
-  padding-right: 10px;
-  padding-left: 10px;
-  box-sizing: border-box;
 }
